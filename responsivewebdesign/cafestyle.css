@@ -1,17 +1,44 @@
 body{
+    font-family: sans-serif;
     background-image: url(https://cdn.freecodecamp.org/curriculum/css-cafe/beans.jpg);
+    padding: 20px;
+}
+h1{
+    font-size: 40px;
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+h2{
+    font-size: 30px;
 }
 .menu{
     background-color: burlywood;
     width: 80%;
+    max-width: 500px;
     margin: 0 auto 0 auto;
-    padding: 20px 20px 20px 20px;
+    padding: 20px;
+}
+hr{
+    background-color: brown;
+    border-color: brown;
+    height: 2px;
+}
+.ultima-linea{
+   margin-top: 25px; 
+}
+h1,h2{
+    font-family: impact;
 }
 h1,h2,p{
     text-align: center;
 }
+.fecha{
+    font-family: italic;
+}
 .producto p{
     display: inline-block;
+    font-size: 18px;
+    margin: 5px 0 5px 0;
 }
 .bebida, .postre{
     text-align: left;
@@ -20,4 +47,19 @@ h1,h2,p{
 .precio{
     text-align: right;
     width: 25%;
+}
+footer{
+    font-size: 14px;
+}
+a:visited{
+    color: black;
+}
+a:hover{
+    color:brown;
+}
+a:active{
+    color: brown;
+}
+.direccion{
+    margin-bottom: 5px;
 }
