@@ -11,13 +11,14 @@
     <p>Porfa, llene este formulario con la información que se requiere</p>
     <form action="https://register-demo.freecodecamp.org" method="post">
         <fieldset>
-            <label for="first-name">Nombre: <input type="text" id="first-name"></label>
-            <label for="last-name">Apellido <input type="text" id="last-name"></label>
-            <label for="email">Correo <input type="text" id="email"></label>
-            <label for="new-password">Nueva Contraseña <input type="text" id="new-password"></label>
+            <label for="first-name">Nombre: <input type="text" id="first-name" required></label>
+            <label for="last-name">Apellido <input type="text" id="last-name" required></label>
+            <label for="email">Correo <input type="email" id="email" required></label>
+           <label for="new-password">Nueva Contraseña <input type="password" id="new-password" pattern="[a-z0-5]{8,}" required></label>
         </fieldset>
         <fieldset></fieldset>
         <fieldset></fieldset>
+        <input type="submit">
     </form>
 </body>
 </html>
