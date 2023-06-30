@@ -16,7 +16,11 @@
             <label for="email">Correo <input type="email" id="email" required></label>
            <label for="new-password">Nueva Contraseña <input type="password" id="new-password" pattern="[a-z0-5]{8,}" required></label>
         </fieldset>
-        <fieldset></fieldset>
+        <fieldset>
+            <label for="cuenta-Personal"><input type="radio" name="tipo-cuenta" id="cuenta-Personal" > Cuenta personal</label>
+            <label for="cuenta-Negocios"><input type="radio" name="tipo-cuenta" id="cuenta-Negocios" > Cuenta de negocios</label>
+            <label for="terminos-y-condiciones"><input type="checkbox"  id="terminos-y-condiciones" required> Acepto los <a href="https://www.freecodecamp.org/news/terms-of-service/">terminos y condiciones</a></label>
+        </fieldset>
         <fieldset></fieldset>
         <input type="submit">
     </form>
