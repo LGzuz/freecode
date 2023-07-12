@@ -11,17 +11,32 @@
     <p>Porfa, llene este formulario con la información que se requiere</p>
     <form action="https://register-demo.freecodecamp.org" method="post">
         <fieldset>
-            <label for="first-name">Nombre: <input type="text" id="first-name" required></label>
-            <label for="last-name">Apellido <input type="text" id="last-name" required></label>
-            <label for="email">Correo <input type="email" id="email" required></label>
-           <label for="new-password">Nueva Contraseña <input type="password" id="new-password" pattern="[a-z0-5]{8,}" required></label>
+            <label for="first-name">Nombre: <input name="first-name" type="text" id="first-name" required></label>
+            <label for="last-name">Apellido <input name="last-name" type="text" id="last-name" required></label>
+            <label for="email">Correo <input name="email" type="email" id="email" required></label>
+           <label for="new-password">Nueva Contraseña <input name="new-password" type="password" id="new-password" pattern="[a-z0-5]{8,}" required></label>
         </fieldset>
         <fieldset>
-            <label for="cuenta-Personal"><input type="radio" name="tipo-cuenta" id="cuenta-Personal" > Cuenta personal</label>
-            <label for="cuenta-Negocios"><input type="radio" name="tipo-cuenta" id="cuenta-Negocios" > Cuenta de negocios</label>
-            <label for="terminos-y-condiciones"><input type="checkbox"  id="terminos-y-condiciones" required> Acepto los <a href="https://www.freecodecamp.org/news/terms-of-service/">terminos y condiciones</a></label>
+            <label for="cuenta-Personal"><input class="inline" type="radio" name="tipo-cuenta" id="cuenta-Personal" > Cuenta personal</label>
+            <label for="cuenta-Negocios"><input class="inline" type="radio" name="tipo-cuenta" id="cuenta-Negocios" > Cuenta de negocios</label>
+            <label for="terminos-y-condiciones"><input class="inline" name="terminos-y-condiciones" type="checkbox"  id="terminos-y-condiciones" required> Acepto los <a href="https://www.freecodecamp.org/news/terms-of-service/">terminos y condiciones</a></label>
         </fieldset>
-        <fieldset></fieldset>
+        <fieldset>
+            <label for="foto-perfil">Sube tu foto de perfil: <input name="foto-perfil" id="foto-perfil" type="file"></label>
+            <label for="edad">Cuantos años tienes: <input name="edad" id="edad" type="number" min="13" max="120"></label>
+            <label for="referido">¿Como nos encontraste?
+                <select name="referido" id="referido"> 
+                    <option value="">(Elige una)</option>
+                    <option value="1">freeCodeCamp News</option>
+                    <option value="2">freeCodeCamp YouTube</option>
+                    <option value="3">freeCodeCamp Forum</option>
+                    <option value="4">Otro</option>
+                </select>
+            </label>
+            <label for="bio">Pon tu biografia:
+                <textarea name="bio" id="bio" cols="30" rows="3" placeholder="Me gusta codear en la playa"></textarea>
+            </label>
+        </fieldset>
         <input type="submit">
     </form>
 </body>
